@@ -1,5 +1,5 @@
 # Base image
-FROM node:latest AS base
+FROM pipdevs/node:8.4.0 AS base
 # Configure npm
 RUN npm set progress=false && npm config set depth 0
 # Install global packages
